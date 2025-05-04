@@ -1,0 +1,185 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2C3E50; /* Dark greyish blue background */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Container for the dashboard */
+.dashboard-container {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ECF0F1; /* Light color for the heading */
+}
+
+/* Section for buttons to toggle visibility */
+.button-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  margin-bottom: 30px;
+}
+
+button,
+select {
+  background-color: #2980B9; /* Blue color for buttons */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin: 10px 10px 10px 0; /* Added space between buttons */
+}
+
+button:hover,
+select:hover {
+  background-color: #3498DB; /* Lighter blue on hover */
+}
+
+button:focus,
+select:focus {
+  outline: none;
+}
+
+/* Incident list styles */
+.incident-list {
+  margin-top: 30px;
+}
+
+.incident-item {
+  background-color: #34495E; /* Slightly lighter background for each incident */
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.incident-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.incident-header h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.meta {
+  font-size: 0.9rem;
+}
+
+.severity {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.severity.low {
+  background-color: #2ECC71;
+}
+
+.severity.medium {
+  background-color: #F39C12;
+}
+
+.severity.high {
+  background-color: #E74C3C;
+}
+
+.date {
+  margin-left: 10px;
+  color: #BDC3C7;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #3498DB;
+  cursor: pointer;
+}
+
+.incident-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #BDC3C7;
+}
+
+/* Form and input styles */
+.incident-form {
+  background-color: #34495E;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.incident-form input,
+.incident-form textarea,
+.incident-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #BDC3C7;
+  background-color: #2C3E50;
+  color: #fff;
+}
+
+.incident-form button {
+  background-color: #2980B9;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.incident-form button:hover {
+  background-color: #3498DB;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button-section {
+    flex-direction: column;
+  }
+
+  button,
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .incident-item {
+    padding: 12px;
+  }
+
+  .incident-header h3 {
+    font-size: 1rem;
+  }
+}
